@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vértices arredondados</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            height: 90px;
+            width: 600px;
+            background-color: beige;
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+
+            box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.548);
+
+            border-radius: 10px;
+
+
+        }
+        div#um{
+            border-radius: 10px 20px 30px 40px;
+            
+        }
+        div#dois{
+            border-radius: 10px 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <code>
+            border-radius: 10px;
+            <p>Arredondamento das bordas com medidas iguais</p>
+        </code>
+    </div>
+    <div id="um">
+        <code>
+            border-radius: 10px 20px 30px 40px;
+            <p>Medidas diferentes</p>
+        </code>
+    </div>
+    <div id="dois">
+        <code>
+            border-radius: 10px 30px;
+        </code>
+    </div>
+    
+    
+</body>
+</html>

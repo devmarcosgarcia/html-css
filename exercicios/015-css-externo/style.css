@@ -1,0 +1,13 @@
+@charset "UTF-8";    /*Permite compatibilidade com alguns caracteres.*/
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: chocolate;
+}
+
+p{
+    text-align: justify;
+}

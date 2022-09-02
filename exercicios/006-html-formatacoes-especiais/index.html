@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações Especiais</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>&lt;code&gt; &nbsp; <code>println("Formulario Enviado com Sucesso!")</code> </p>
+
+    <h3>Exemplo de código sem a tag &lt;pre&gt;</h3>
+
+    <p><code>@Override
+        public int getItemCount() {return this.listaTreinos.size(); }
+    
+    
+        public class MyViewHolder extends RecyclerView.ViewHolder{
+    
+            TextView treino;
+    
+            public MyViewHolder(@NonNull View itemView) {
+                super(itemView);
+    
+                treino = itemView.findViewById(R.id.textView_nome_treino);
+            }
+        }</code></p>
+
+        <h3>Usando a tag &lt;pre&gt;</h3>
+
+        <pre>
+            <code>
+        @Override
+        public int getItemCount() {return this.listaTreinos.size(); }
+    
+    
+        public class MyViewHolder extends RecyclerView.ViewHolder{
+    
+            TextView treino;
+    
+            public MyViewHolder(@NonNull View itemView) {
+                super(itemView);
+    
+                treino = itemView.findViewById(R.id.textView_nome_treino);
+            }
+        }
+            </code>
+        </pre>
+    
+        <hr>
+
+        <h2>Citações Simples</h2>
+        <h3>Usando a tag &lt;q&gt;</h3>
+        <p>Como diria Jesus : <q>Fique rico ou morra tentando</q></p>
+
+        <h2>Citações Completas</h2>
+        <p>Segundo Peter: </p>
+        <blockquote cite="https://www.bibliaonline.com.br/ara/ap/21">
+            
+        A cidade é quadrangular, de comprimento e largura iguais. E mediu a cidade com a vara até doze mil estádios. O seu comprimento, largura e altura são iguais.
+
+        Apocalipse 21:16
+        </blockquote>
+
+
+        <h2>Abreviações</h2>
+        <p>Estou estudanto <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+        <h2>Texto Invertido</h2>
+        <p><bdo dir="rtl">socraM</bdo></p>
+
+</body>
+</html>

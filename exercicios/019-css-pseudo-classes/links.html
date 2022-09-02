@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        a{
+            color: red;
+            text-decoration: none;      /*Retira o sublinhado dos links*/
+        }
+
+        a:visited{
+            
+            color: rgb(218, 145, 145);
+        }
+
+        a:hover{
+
+            color: #000;
+            text-decoration: underline;
+        }
+
+
+        /*pseudo elementos*/
+
+        .especial::before{
+
+            content: '✩ ';
+        }
+
+        .especial::after{
+
+            content: ' ✩';
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https:\\google.com" class="especial">Google</a></li>
+        <li><a href="https:\\uol.com.br">Uol</a></li>
+        <li><a href="https:\\terra.com.br">Terra</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(158, 154, 154);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(158, 154, 154);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Exemplo de Site
+        </h1>
+        <nav>
+            <a href="#">Loja</a> <a href="#">Meus Dados</a> <a href="#">Sobre</a> <a href="#">Duvidas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="assuntos">
+
+            </article>
+            <article id="noticias">
+                <article>
+                    <h2>Notícia sobre o Mundo </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit voluptas veniam cupiditate dignissimos ipsam officiis, ducimus quia culpa inventore dolores aspernatur commodi id fugiat illo dicta quisquam praesentium laboriosam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit minus adipisci minima expedita laboriosam, quo provident exercitationem, molestiae iusto officiis quae saepe, assumenda molestias? Quaerat adipisci aut eius vitae!
+                    </p>
+                    <aside>
+                        <p>Artigo escrito por Joaozinho do pé de feijão.</p>
+                    </aside>
+                </article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por...</p>
+    </footer>
+
+</body>
+
+</html>
