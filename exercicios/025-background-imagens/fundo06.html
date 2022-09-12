@@ -8,21 +8,15 @@
     <style>
         body{
             height: 95vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
+            
+            /* 
+            *       Shorthand background
+            *
+            *   background: color image position repeat attachment
+            */
 
-            /*background-size: 1000px;  Tamanho fixo*/
-
-            /*background-size: 100%;      Ajusta automaticamente ao tamanho da tela mais nesse caso, deixou uma faixa preta abaixo da imagem.*/
-
-            /*background-size: 100% 100%;   Preenche a tela, mais distorce a imagem, necessario definir o height do body */
-
-            /*background-size: contain; Preenche a tela sem distorções, mas conforme a tela diminui a faixa preta aumenta abaixo da imagem*/
-
-            background-size: cover;     /* Cobre 100% da tela e se ajusta ao tamanho da janela. */
-
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
 
         }
 
@@ -45,7 +39,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt rem modi corrupti possimus non dolores reiciendis minus cum laborum voluptatibus voluptatum, asperiores rerum incidunt aliquid deleniti sit nulla. Officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officia asperiores dolorum ipsam, earum sapiente quam, modi corporis consequuntur expedita reprehenderit alias tempora non dolore repudiandae placeat? Dolor, dignissimos doloribus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat mollitia assumenda culpa et, facere maxime iusto unde reiciendis voluptas praesentium at corporis sapiente iste beatae, fugiat, debitis magnam obcaecati?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt rem modi corrupti possimus non dolores reiciendis minus cum laborum voluptatibus voluptatum, asperiores rerum incidunt aliquid deleniti sit nulla. Officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officia asperiores dolorum ipsam, earum sapiente quam, modi corporis consequuntur expedita reprehenderit alias tempora non dolore repudiandae placeat? Dolor, dignissimos doloribus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat mollitia assumenda culpa et, facere maxime iusto unde reiciendis voluptas praesentium at corporis sapiente iste beatae, fugiat, debitis magnam obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus consequatur earum dicta nihil, labore a fuga, esse, incidunt dolorem veniam. Ducimus reiciendis magni, adipisci deserunt esse officiis. Commodi, sapiente! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro perspiciatis debitis quidem, aut nobis ipsa ea! Consequuntur perferendis qui vero asperiores, inventore odit ipsa labore reiciendis atque! Rem, a eos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptates culpa incidunt minima quasi quo, cumque similique sed officia et quod deserunt alias inventore quos voluptatibus quibusdam labore, consectetur tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia iusto ratione deleniti dolores beatae quaerat vero? Cumque molestiae nihil, porro officia assumenda enim pariatur sapiente molestias accusamus dolorum. Beatae!</p>
     </main>
     
 </body>
