@@ -9,10 +9,25 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table{
             width: 500px;
             border-collapse: collapse;
             
+            position: relative;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(236, 184, 184);    /* mesma cor background thead*/
+        }
+
+        caption{
+            background-color: rgb(194, 186, 238);
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
         }
         td, th{
             border: 1px solid black;
@@ -21,8 +36,13 @@
         td.num{
             text-align: right;
         }
-        thead, tfoot{
+
+        tbody > tr:nth-child(even){
             background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: rgb(236, 184, 184);
         }
     </style>
 </head>
@@ -35,9 +55,11 @@
         <caption>População das Unidades Federativas</caption>
 
         <thead> <!-- cabeçalho -->
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da População</th>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">% da População</th>
+                </tr>
         </thead>
 
         <tbody> <!-- corpo -->
@@ -61,13 +83,238 @@
                     <td class="num">14 873 064</td>
                     <td class="num">7.1</td>
                 </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    <td class="num">21.9</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                    <td class="num">10.1</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                    <td class="num">8.2</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                    <td class="num">7.1</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                    <td class="num">5.4</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                    <td class="num">4.3</td>
+                </tr>
         </tbody>
 
         <tfoot> <!-- rodape -->
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td class="num">99 225 847</td>
-                    <td class="num">47.3</td>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num">121 225 847</td>
+                    <td class="num">45.3</td>
                 </tr>
         </tfoot>
 
