@@ -9,16 +9,56 @@
 
         table{
 
-            border-collapse: collapse; /* sem espaços entre as bordas*/
+            border-collapse: collapse; 
         }
-
+        
         td{
             border: 1px solid black;
             width: 100px;
             height: 100px;
             padding: 10px;
-            text-align: center;          /* centralização horizontal */
-            vertical-align: bottom;     /* centralização vertical */
+            text-align: center;          
+            vertical-align: middle;     
+        }
+
+        td.bottom-center{
+            text-align: center;          
+            vertical-align: bottom; 
+        }
+
+        td.top-center{
+            text-align: center;          
+            vertical-align: top; 
+        }
+       
+        td.right-center{
+            text-align: right;          
+            vertical-align: middle; 
+        }
+       
+        td.left-center{
+            text-align: left;          
+            vertical-align: middle; 
+        }
+
+        td.right-bottom{
+            text-align: right;          
+            vertical-align: bottom; 
+        }
+
+        td.right-top{
+            text-align: right;          
+            vertical-align: top; 
+        }
+
+        td.left-bottom{
+            text-align: left;          
+            vertical-align: bottom; 
+        }
+
+        td.left-top{
+            text-align: left;          
+            vertical-align: top; 
         }
 
     </style>
@@ -27,22 +67,22 @@
 
     <table>
 
-        <tr>               <!-- linha A-->
-            <td>A1</td>    <!-- dados da linha A-->
-            <td>A2</td>
-            <td>A3</td>
+        <tr>               
+            <td class="right-bottom">A1</td>    
+            <td class="bottom-center">A2</td>
+            <td class="left-bottom">A3</td>
         </tr>
 
-        <tr>                <!-- linha B-->
-            <td>B1</td>     <!-- dados da linha B-->
+        <tr>                
+            <td class="right-center">B1</td>     
             <td>B2</td>
-            <td>B3</td>
+            <td class="left-center">B3</td>
         </tr>
 
         <tr>
-            <td>C1</td>
-            <td>C2</td>
-            <td>C3</td>
+            <td class="right-top">C1</td>
+            <td class="top-center">C2</td>
+            <td class="left-top">C3</td>
         </tr>
 
         
