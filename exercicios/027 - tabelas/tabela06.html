@@ -8,7 +8,7 @@
     <style>
          table{
             border-collapse: collapse;
-            width: 500px;
+            width: 800px;
         }
         td, th{
             border: 1px solid black;
@@ -26,76 +26,97 @@
         col.colNome{
             background-color: yellow;
         }
+
+        p{
+            text-align: justify;
+        }
+
+        div#containerTabela{
+            overflow-x: auto;
+        }
+
     </style>
 </head>
 <body>
 
-    <table>
+    <h1>Responsividade de Tabelas</h1>
 
-        <colgroup>
-            <col class="colNome" span="2">
-            <col class="colIdade">
-            <col class="colSexo">
-            <col class="colProfissao">
-        </colgroup>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora et sapiente cum, explicabo veritatis voluptatibus obcaecati, incidunt illum tempore, enim laboriosam officia nihil sunt similique magni optio deserunt accusantium.
+    Reiciendis delectus architecto, aliquid dolore debitis mollitia nulla dicta sapiente cupiditate eligendi provident magni libero iure consequuntur natus rerum ullam doloremque. Ea consectetur nihil quia nostrum natus repellendus iure odit.
+    Unde suscipit quas mollitia rem maxime vero amet ipsam. Incidunt fuga dicta magnam minus. Expedita laudantium dolorem corporis error tempora quod dolores id, sapiente repellendus reiciendis officiis, exercitationem nobis sequi?</p>
 
-        <caption>Cadastro</caption>
-        <thead>
-            
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>Idade</th>
-                <th>Sexo</th>
-                <th>Profissão</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Ana</td>
-                <td>Maria</td>
-                <td>25</td>
-                <td>F</td>
-                <td>Contabilidade</td>
-            </tr>
-            <tr>
-                <td>Bob</td>
-                <td>Santos</td>
-                <td>48</td>
-                <td>M</td>
-                <td>Pintor</td>
-            </tr>
-            <tr>
-                <td>Bia</td>
-                <td>Martins</td>
-                <td>32</td>
-                <td>F</td>
-                <td>Professora</td>
-            </tr>
-            <tr>
-                <td>Tereza</td>
-                <td>Silva</td>
-                <td>55</td>
-                <td>F</td>
-                <td>Costureira</td>
-            </tr>
-            <tr>
-                <td>João</td>
-                <td>Neves</td>
-                <td>18</td>
-                <td>M</td>
-                <td>Servidor</td>
-            </tr>
-            <tr>
-                <td>Juca</td>
-                <td>Pereira</td>
-                <td>25</td>
-                <td>M</td>
-                <td>Programador</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="containerTabela">
+        <table>
+            <colgroup>
+                <col class="colNome" span="2">
+                <col class="colIdade">
+                <col class="colSexo">
+                <col class="colProfissao">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+        
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Profissão</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>Maria</td>
+                    <td>25</td>
+                    <td>F</td>
+                    <td>Contabilidade</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Santos</td>
+                    <td>48</td>
+                    <td>M</td>
+                    <td>Pintor</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+                <tr>
+                    <td>Bia</td>
+                    <td>Martins</td>
+                    <td>32</td>
+                    <td>F</td>
+                    <td>Professora</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+                <tr>
+                    <td>Tereza</td>
+                    <td>Silva</td>
+                    <td>55</td>
+                    <td>F</td>
+                    <td>Costureira</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>Neves</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>Servidor</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+                <tr>
+                    <td>Juca</td>
+                    <td>Pereira</td>
+                    <td>25</td>
+                    <td>M</td>
+                    <td>Programador</td>
+                    <td>Rua Longe de Mais do Reino Distante 150</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
 </body>
 </html>
