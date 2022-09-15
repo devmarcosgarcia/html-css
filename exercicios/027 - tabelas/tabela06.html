@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Colunas</title>
+    <style>
+         table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr.destaque{
+            background-color: chartreuse;
+        }
+
+        col.colProfissao{
+            background-color: chartreuse;
+        }
+
+        col.colNome{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <colgroup>
+            <col class="colNome" span="2">
+            <col class="colIdade">
+            <col class="colSexo">
+            <col class="colProfissao">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <thead>
+            
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Maria</td>
+                <td>25</td>
+                <td>F</td>
+                <td>Contabilidade</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Santos</td>
+                <td>48</td>
+                <td>M</td>
+                <td>Pintor</td>
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td>Martins</td>
+                <td>32</td>
+                <td>F</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Tereza</td>
+                <td>Silva</td>
+                <td>55</td>
+                <td>F</td>
+                <td>Costureira</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Neves</td>
+                <td>18</td>
+                <td>M</td>
+                <td>Servidor</td>
+            </tr>
+            <tr>
+                <td>Juca</td>
+                <td>Pereira</td>
+                <td>25</td>
+                <td>M</td>
+                <td>Programador</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
