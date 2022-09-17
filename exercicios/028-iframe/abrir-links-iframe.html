@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrindo links internos no Iframe</title>
+    <style>
+
+        iframe{
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Abrindo links internos dentro do iframe</h1>
+
+    <ul>
+        <li><a href="../010-html-imagens-dinamicas/index.html" target="frame">Página 1</a></li>
+        <li><a href="../011-html-midias-audio/index.html" target="frame">Página 2</a></li>
+        <li><a href="../023-projeto-android/android.html" target="frame">Página 3</a></li>
+    </ul>
+    
+    <iframe name="frame" srcdoc="<h1>Escolha uma página acima.</h1>" frameborder="0">
+
+    </iframe>
+</body>
+</html>
