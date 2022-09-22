@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="idEmail">Email</label>
+                <input type="email" name="email" id="idEmail">
+            </p>
+            <p>
+                <label for="idTel">Telefone</label>
+                <input type="tel" name="telefone" id="idTel" pattern="^[0-9]{4}-[0-9]{4}$">
+                <!--  pattern são expressões RegEx  -->
+            </p>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
