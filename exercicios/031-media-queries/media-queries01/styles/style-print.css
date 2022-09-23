@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Style para impressão */
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+menu{
+    display: none;
+}
