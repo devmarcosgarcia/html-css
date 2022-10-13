@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;            
+            background-color: green;
+        }
+        .gatim1{
+            object-fit: none;
+        }
+        .gatim2{
+            object-fit: fill;
+        }
+        .gatim3{
+            object-fit: contain;
+        }
+        .gatim4{
+            object-fit: cover;
+        }
+        .gatim5{
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Usando Object-Fit para ajustar proporções</h1>
+
+    <h2>Imagen original</h2>
+
+    <img src="imagens/cat.png" alt="Gatim fofim">
+
+    <h2>object-fit: none;</h2>
+
+    <img class="gatim1" src="imagens/cat.png" alt="Gatim fofim">
+
+    <h2>object-fit: fill;</h2>
+
+    <img class="gatim2" src="imagens/cat.png" alt="Gatim fofim">
+
+    <h2>object-fit: contain;</h2>
+
+    <img class="gatim3" src="imagens/cat.png" alt="Gatim fofim">
+
+    <h2>object-fit: cover;</h2>
+
+    <img class="gatim4" src="imagens/cat.png" alt="Gatim fofim">
+
+    <h2>object-fit: scale-down;</h2>
+
+    <img class="gatim5" src="imagens/cat.png" alt="Gatim fofim">
+
+    
+</body>
+</html>
