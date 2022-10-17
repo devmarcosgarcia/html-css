@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        .div-flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            height: 500px;
+        }
+
+        .div-flex2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            height: 500px;
+        }
+
+        .div-flex div{
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        .div-flex2 div{
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Alinhamentos</h1>
+    <h2>Horizontal</h2>
+
+    <div class="div-flex">
+
+        <div class="a">A</div>
+
+        <div class="b">B</div>
+
+        <div class="c">C</div>
+
+        
+    </div>
+    
+    <h2>Vertical</h2>
+
+    <div class="div-flex2">
+
+        <div class="d">D</div>
+
+        <div class="e">E</div>
+
+        <div class="f">F</div>
+
+        
+    </div>
+</body>
+</html>
