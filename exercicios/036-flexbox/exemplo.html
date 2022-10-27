@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Página com FlexBox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: content-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(223, 206, 240);
+        }
+        .container{
+            flex: 1;
+            max-width: 900px;
+            background-color: white;
+        }
+        header{
+            background-color: bisque;
+        }
+        header .titulo{
+            text-align: center;
+            padding: 40px;
+        }
+        header nav{
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+        header nav a{
+            font-size: 20px;          
+            padding: 0px 30px 10px;
+            text-decoration: none;
+            color: black;
+        }
+        main{
+            display: flex;
+            
+        }
+        aside{
+            flex: 1;
+            min-width: 250px;
+            background-color: burlywood;
+            padding: 10px;
+            text-align: justify;
+        }
+        article{
+            display: flex;
+            align-items: flex-end;
+            background-image: url(../025-background-imagens/imagens/wallpaper001.jpg);
+            background-size: contain;
+        }
+        article .imagens{
+            display: flex;
+            flex-wrap: wrap;
+                 
+            
+        }
+        .imagens div{
+            flex: 1;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .imagens div img{
+            max-width: 180px;
+        }
+       
+
+        footer{
+            background-color: black;
+            height: 30px;
+            color: white;
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="titulo"><h1>Ullam ut vitae deleniti voluptatum</h1></div>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+            </nav>
+        </header>
+        <main>
+            <aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde nihil corporis, perferendis ducimus similique labore tenetur aliquid numquam ipsa. Saepe, consequatur! Obcaecati repellendus, qui fugiat nostrum ab error architecto impedit.
+                Placeat, aperiam odit. Voluptatibus quod ipsum eligendi magnam ab sit error corrupti cumque, impedit similique saepe illo quo animi quisquam aliquid quis accusamus explicabo commodi architecto modi consectetur delectus maxime.
+                Facilis autem consequuntur magni perferendis beatae quasi harum voluptate similique quia quas itaque, laboriosam illum repudiandae, odit voluptatibus, eligendi vero? Necessitatibus possimus perspiciatis at impedit voluptate molestias. Voluptatibus, corporis maxime!
+                Tenetur cumque repellat et ad assumenda vitae, voluptate alias? Eum magnam asperiores soluta explicabo veritatis exercitationem impedit odio aliquam tempora harum error obcaecati facilis et, odit, suscipit id placeat eos?
+                Earum voluptatum corrupti quaerat consequatur cum, et hic nisi? Iure, illo et ducimus vel porro culpa! Laboriosam cum eaque doloribus libero? Quod ad unde vero voluptas necessitatibus a vitae ipsa!
+            </aside>
+            <article>
+                <div class="imagens">
+                    <div>
+                        <img src="../010-html-imagens-dinamicas/imagens/foto-p.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../010-html-imagens-dinamicas/imagens/foto-m.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../010-html-imagens-dinamicas/imagens/foto-g.png" alt="">
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            Desenvolvido por... Todos os direitos reservados
+        </footer>
+    </div>
+    
+</body>
+</html>
