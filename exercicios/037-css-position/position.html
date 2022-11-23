@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fixed">
+        <h1>Positions CSS</h1>
+    </div>
+
+    <h2 id="primeiro-titulo">Static</h2>
+
+    <div id="static">
+        <h3>Static</h3>
+        <p>Todos os elementos HTML por padrão seguem o posicionamento static.
+        </p>
+        <p>Ou seja, eles seguem o fluxo que está disposto no documento HTML.</p>
+    </div>
+
+    <hr>
+
+    <h2>Relative</h2>
+    
+        <p>
+            Com o relative podemos posicionar o elemento com as propriedades top, right, bottom, left.
+        </p>
+        <p>
+            Neste exemplo foi adicionado 10% de deslocamento do lado esquedo da div e 50px de deslocamento na parte superior.
+        </p>
+        <p>
+            O posicionamento relative se orienta por sua propria posição.
+            <br>
+            Mas, quando o elemento é deslocado, sua posicão original ainda fica ocupada por ele
+        <p>
+
+    <div id="relative">
+        <h3>Relative</h3>
+        <p><strong>Seu deslocamento pode sobrepor outros elementos.</strong></p>
+
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad impedit minima, accusantium cum ex architecto! Aut eveniet consectetur iure! Doloremque quia sit officia modi maiores error corporis laudantium debitis eum!</p>
+
+    <hr>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, veritatis? Nam sapiente id fugit dolores, laboriosam praesentium voluptate nihil! Voluptate molestias eveniet a quos velit dolore necessitatibus obcaecati? Sit, id?</p>
+
+    <h2>Absolute</h2>
+    <h3>Exemplo 1</h3>
+
+    <div id="absolute1">
+        <h3>Absolute</h3>
+        <p>O posicionamento absolute é orientado pelo elemento pai. Neste caso o pai é o body.
+        </p>
+        <p>
+            Neste exemplo a div está flutuando sobre um parágrafo.
+        </p>
+        <p>
+            Para evitar que o elemento com posicionamento absolute tenha o body como pai.
+            <br>
+            Sempre é recomendado colocar o elemento absolute dentro de uma div relative.
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aperiam quo inventore provident recusandae dignissimos earum soluta quos, placeat eos laudantium impedit ipsa sed accusantium quis! Minima nulla maxime natus!</p>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Exemplo 2</h3>
+
+    <div id="container-relative">
+        <p>Container relative</p>
+        <div id="absolute2">
+            <h3>Absolute</h3>
+            <p>O posicionamento absolute é orientado pelo elemento pai. Neste caso o pai é o container-relative.
+            </p>
+           
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aperiam quo inventore provident recusandae dignissimos earum soluta quos, placeat eos laudantium impedit ipsa sed accusantium quis! Minima nulla maxime natus!</p>
+
+    <hr>
+
+    <h2>Sticky</h2>
+
+    <div id="stick">
+        Sticky
+        <p>É uma mistura de relative com fixed</p>
+    </div>
+
+
+</body>
+</html>

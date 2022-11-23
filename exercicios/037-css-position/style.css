@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(137, 139, 238);
+}
+
+#fixed{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 12px;
+
+    position: fixed;
+    top: 0px;
+}
+
+#primeiro-titulo{
+    margin-top: 100px;
+}
+
+#static{
+    /*position: static;*/
+    width: 80%;
+    height: 200px;
+    background-color: rgba(127, 255, 212, 0.452);
+    text-align: center;
+}
+
+hr{
+    margin: 50px 0;
+}
+
+#relative{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(127, 255, 212, 0.589);
+    text-align: center;
+
+    left: 10%;
+    top: 50px;
+}
+
+#absolute1{
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(255, 157, 127, 0.336);
+    text-align: center;
+
+}
+
+#container-relative{
+    position: relative;
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    margin: 50px 0;
+    left: 5%;
+}
+
+#absolute2{
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(217, 255, 127, 0.589);
+    text-align: center;
+    top: 50px;
+    left: 10%;
+
+}
+
+#stick{
+    position: sticky;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(255, 127, 227, 0.589);
+    text-align: center;
+
+    bottom: 30px;
+}
